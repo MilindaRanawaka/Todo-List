@@ -1,10 +1,66 @@
 .App {
   text-align: center;
 }
+.hello{
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.col-md-4{
+  max-height: 235px;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container-fluid{
+  background-color: rgba(120, 120, 150, 0.8);
+  width: 80%;
+  margin: 40px auto;
+  border: thin solid #000000;
+}
+
+.data-item{
+  font: oblique bold 22px Georgia, serif;
+  color: #fff;
+  width: 300px;
+  margin: 0px 0px 20px 20px;
+  height: 50px;
+  background-color: #567dbf;
+  border-radius: 5px;
+  position: relative;
+}
+
+@media screen and (max-width:800px) {
+  .data-item{
+    width:80%;
+  }
+}
+.data-item p{
+  padding: 10px;
+  position: relative;
+}
+
+.edit-span{
+  padding-right: 15px;
+  padding-top: 10px;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.delete-span{
+  padding-top: 10px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.far fa-trash-alt{
+  background-color: aqua;
+  border: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +78,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.row{
+  padding: 50px 50px 10px 10px;
+}
+
+.col-md-8{
+  border: thin solid #000000;
+  padding: 10px;
 }
 
 .App-link {
